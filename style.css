@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root{
+    --main-color:#fff;
+    --secondary-color:#E7E6E6;
+    --text--color:#000000;
+    --bg-:#EBD96B;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 56px;
+    font-weight: 600;
+}
+
+
+section{
+    padding: 1.5rem 7%;
+}
+a{
+    text-decoration: none;
+}
+
+/* header start */
+header{
+    padding: 1.5rem 7%;
+    position: fixed!important;
+    display: flex;
+    justify-content: space-between!important;
+    width: 100%;
+    align-items: center!important;
+    border-bottom: 5px solid var(--text--color);
+    background-color: var(--main-color);
+}
+
+header a img{
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+header nav ul{
+    list-style: none;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    margin: 0 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--text--color);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    transition: .5s;
+    font-weight: 600;
+}
+
+header nav ul li a:hover{
+    color: rgb(91, 214, 122);
+}
+
+header nav ul li a:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .8s;
+    background-color: #3033b1;
+    
+}
+header nav ul li a:hover:after{
+    width: 100%;
+}
+
+
+
+
+header i{
+    font-size: 25px;
+    transition: .5s;
+    display: none!important; 
+}
+header i:hover{
+    color: aqua;
+}
+
+/* header end */
+
+/*-- catalogue --*/
+#catalogue{
+    padding-top: 10rem;
+    
+}
+
+#catalogue .container{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    
+}
+
+#catalogue .container .row .col .header-contant{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    padding-left: 5rem;
+    
+    
+}
+#catalogue .container .row .col .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#catalogue .container .row .col .img img{
+    width: 606px;
+}
+/*-- catalogue end--*/
+
+/* adds */
+.adds{
+    background-color: var(--bg-);
+    padding: 1rem 0;
+}
+.adds .container .row .col .adds-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adds .container .row .col .adds-img img{
+    height: 70px;
+    width: 127px;
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* adds */
+
+/* NEW ARRIVALS */
+.arrivals{
+    display: flex;
+    flex-direction: column!important;
+    align-items: center!important;
+}
+.arrivals .container .arrivals-heading {
+    margin: 2rem;
+}
+
+.arrivals .container .row .col .arrivals-sld .sld-img img{
+    width: 100%;
+}
+.arrivals .container .row .col .arrivals-sld .sld-contain{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.arrivals .container .row .col .arrivals-sld .sld-contain a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 1rem;
+    padding: .5rem;
+    transition: .5s;
+    border-radius: 15px;
+    color: #000000;
+
+}
+.arrivals .container .row .col .arrivals-sld .sld-contain a:hover{
+    background-color: #f1ebeb;
+}
+/* NEW ARRIVALS */
+
+/* PAYDAY SALE NOW  */
+.payday{
+    background-color: #FEE459;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.payday .container .row .col .payday-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid black;
+    justify-content: center;
+
+}
+
+.payday .container .row .col .payday-img img{
+    width: 400px;
+    
+}
+.payday .container .payday-contant{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    
+}
+.payday .container .payday-contant h2{
+    line-height: 80px;
+    font-weight: 800;
+}
+.payday .container .payday-contant h2 span{
+    background-color: var(--main-color);
+    padding: 0 .5rem;
+}
+
+.payday .container .payday-contant p{
+    font-size: 18px;
+}
+.payday .container .payday-contant .payday-btn{
+     padding-bottom: 2rem;
+}
+.payday .container .payday-contant .payday-btn a{
+    text-decoration: none;
+    color: var(--main-color);
+    padding: .5rem 1rem;
+    background-color: var(--text--color);
+   
+}
+
+.payday .container .payday-contant .payday-btn a:hover{
+    background-color: #2c2a2a;
+}
+/* PAYDAY SALE NOW  */
+
+/* Young’s Favourite  */
+
+.young .container .row .col .young-contain {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.young .container .row .col .young-contain .img img{
+    width: 100%;
+}
+.young .container .row .col .young-contain a{
+    text-decoration: none;
+    color: var(--text--color);
+    transition: .5s;
+   
+}
+
+.young .container .row .col .young-contain a:hover{
+   color: #EBD96B;
+}
+
+.young .container .row .col .young-contain a i{
+    font-size: 20px;
+}
+
+.young .container .row .col .young-contain a:hover i{
+    font-size: 25px;
+}
+/* Young’s Favourite  */
+
+/* DOWNLOAD APP */
+.download{
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.download .container .row .col .download-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 710px;
+}
+
+.download .container .row .col .download-con p{
+    padding: 1rem 0;
+}
+.download .container .row .col .download-con .app a img{
+    width: 150px;
+    padding: .5rem;
+    border-radius: 15px;
+    transition: .9s;
+}
+
+.download .container .row .col .download-con .app a img:hover{
+    background-color: #d8cccc;
+}
+/* DOWNLOAD APP end*/
+/* JOIN SHOPPING  */
+
+.join{
+    background-color: var(--bg-);
+    padding: 5rem 0;
+}
+.join .container .join-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.join .container .join-con .search{
+    width: 40%;
+    background-color: var(--main-color);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.join .container .join-con .search input{
+    width: 70%;
+    float: left;
+    padding-left: .5rem;
+    border: none;
+    outline: none;
+}
+
+.join .container .join-con .search a{
+    text-decoration: none;
+    padding: .2rem 25px;
+    color: var(--main-color);
+    background-color: var(--text--color);
+    float: right;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.join .container .join-con .search a:hover{
+    background-color: #7e818100;
+    color: var(--text--color);
+}
+/* JOIN SHOPPING  */
+
+/* footer start */
+
+.footer{
+    padding: 3rem 0;
+    background-color: var(--text--color);
+    color: #fff;
+}
+
+.footer .container .row .col .box .fashion h3{
+    font-weight: 600;
+}
+.footer .container .row .col .box .fashion p{
+    color: #8E8E8E;
+    margin-top: 1rem;
+}
+.footer .container .row .col .box .iconss a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text--color);
+    margin: 2px;
+    padding: 7px;
+    background-color: var(--bg-);
+    border-radius: 15px;
+    transition: .5s;
+}
+.footer .container .row .col .box .iconss a:hover{
+    color: var(--main-color);
+}
+.footer .container .row .col .box .about{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer .container .row .col .box .about a{
+    text-decoration: none;
+    color: #8E8E8E;
+    margin-top: 1rem;
+    transition: .5s;
+}
+.footer .container .row .col .box .about a:hover{
+    color: var(--main-color);
+}
+.footer .container .row .col .box .share{
+    display: flex;
+    flex-direction: column;
+}
+.footer .container .row .col .box .share a{
+    
+    text-decoration: none;
+    color: #8E8E8E;
+    margin-top: 1rem;
+    transition: .5s;
+}
+.footer .container .row .col .box .share a:hover{
+    color: var(--main-color);
+}
+/* footer end */
+
+
+@media (max-width:1320px){
+    .heading{
+        font-size: 50px;
+    }
+
+    /* header */
+    header nav ul li{
+        font-size: 15px;
+        
+    }
+    
+    header nav .signup{
+        font-size: 15px;   
+    }
+    /* header */
+    /* NEW ARRIVALS  */
+   
+    /* NEW ARRIVALS  */
+}
+@media (max-width:1140px){
+    .heading{
+        font-size: 40px;
+    }
+    #catalogue .container .row .col .img img{
+        width: 500px;
+    }
+    /* JOIN SHOPPING */
+    .join .container .join-con .search{
+        width: 55%;
+    }
+    /* JOIN SHOPPING end */
+}
+@media (max-width:960px){
+    .heading{
+        font-size: 38px;
+    }
+
+    section{
+        padding: 1.5rem 2rem;  
+    }
+    /* header start */
+    header{
+        padding: 1.5rem 2rem;
+    }
+
+    header nav ul {
+        padding: 0 1rem;
+        display: block;
+        position: absolute;
+        top: 7.1rem;
+        left: -99999px;
+        background-color: darkkhaki;
+        border-radius: 10px;
+        height: 100vh;
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    header nav ul.active {
+        left: 0;
+    }
+    header nav ul li{
+        margin-top: 1rem;
+    }
+    header i{
+        
+        display: inline-block!important;
+    }
+    /* header end */
+
+    /* cantalogue */
+    #catalogue .container{
+        padding-top: 5rem;
+    }
+    #catalogue .container .row .col .img img{
+        width: 450px;
+        padding-top: 2rem;
+    }
+    /* cantalogue end*/
+
+    /* adds start */
+    .adds .container .row .col .adds-img{
+        margin-top: 1rem;
+    }
+    /* adds end */
+
+   /* PAYDAY SALE NOW  */
+    .payday .container .row .col .payday-img img{
+        width: 350px;
+    }
+
+    .payday .container .payday-contant h2{
+        line-height: 70px;
+        
+    }
+    /* PAYDAY SALE NOW end  */
+
+     /* DOWNLOAD APP end  */
+     .download .container .row .col .download-con .img img{
+        width: 500px;
+    }
+    /* DOWNLOAD APP end  */
+
+    /* DOWNLOAD APP end  */
+    .download{
+        padding: 0;
+    }
+    .download .container .row .col .download-con{
+        
+        height: 400px;
+    }
+    .download .container .row .col .download-con .img img{
+        width: 450px;
+    }
+    /* DOWNLOAD APP end  */
+
+    /* JOIN SHOPPING */
+    .join .container .join-con .search{
+        width: 70%;
+    }
+    /* JOIN SHOPPING end */
+    
+}
+@media (max-width:720px){
+    .heading{
+        font-size: 35px;
+    }
+    /* PAYDAY SALE NOW  */
+    .payday .container .row .col .payday-img img{
+        width: 300px;
+    }
+    /* PAYDAY SALE NOW  */
+
+    /* Young’s Favourite  */
+    .young .container .row .col .young-contain .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .young .container .row .col .young-contain {
+
+        /* align-items: center; */
+        justify-content: center;
+        
+    }
+    .young .container .row .col .young-contain .img img{
+        width: 350px;
+    }
+    /* Young’s Favourite end*/
+    /* DOWNLOAD APP end  */
+    .download{
+        padding: 0;
+    }
+    .download .container .row .col .download-con{
+        
+        height: 390px;
+    }
+    .download .container .row .col .download-con .img img{
+        width: 450px;
+    }
+    /* DOWNLOAD APP end  */
+    /* JOIN SHOPPING */
+    .join .container .join-con .search{
+        width: 85%;
+    }
+    /* JOIN SHOPPING end */
+}
+@media (max-width:540px){
+    .heading{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    /* cantalogue */
+    #catalogue .container .row .col .header-contant{
+        
+        padding-left: 1rem; 
+    }
+
+    #catalogue .container .row .col .img img{
+        width: 300px;
+    }
+    /* cantalogue */
+
+    /* PAYDAY SALE NOW  */
+    .payday .container .row .col .payday-img img{
+        width: 250px;
+    }
+
+    .payday .container .payday-contant h2{
+        line-height: 60px;
+        
+    }
+    /* PAYDAY SALE NOW  */
+
+    /* DOWNLOAD APP end  */
+    .download .container .row .col .download-con .img img{
+        width: 350px;
+    }
+    /* DOWNLOAD APP end  */
+
+    .join .container .join-con .search{
+        width: 95%;
+    }
+
+    .join .container .join-con .search a{
+        padding: .2rem 15px;
+    }
+    /* JOIN SHOPPING end */
+
+    /* footer start */
+
+    .footer .container .row .col .box{
+        margin-top: 2rem;
+    }
+    /* footer end */
+
+}
